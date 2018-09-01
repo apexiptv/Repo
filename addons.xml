@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+    <addon id="ApexIPTV.Repo" name="ApexIPTV Repo" version="1.0" provider-name="ApexIPTV">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="ApexIPTV Repo">
+            <info compressed="false">https://github.com/apexiptv/repo/_repo/addons.xml</info>
+            <checksum>https://github.com/apexiptv/repo/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/apexiptv/repo/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>This repo is for the subscribers of ApexIPTV to download and update their addons.</summary>
+            <description>Members only area invitation for support upon request and account verification by going to facebook.com/apexiptv.net</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.ApexIPTV" name="[COLOR ghostwhite]ApexIPTV[/COLOR]" version="3.1" provider-name="Apex_IPTV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">ApexIPTV</summary>
+    <language>en</language>
+    <description lang="en">Apex IPTV, Supplier of Great Quality, Stable Streams, Awesome Support.
+-Please Be sure to join the subscribers support group at https://www.facebook.com/groups/ApexIPTV
+-Official facebook page https://www.fb.me/apexIPTV.net </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+</addons>
